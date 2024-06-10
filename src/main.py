@@ -4,6 +4,7 @@ from datetime import datetime
 import validation as v
 from config import load_config
 from converter import CurrencyConverter
+from helpers import next_conversion
 
 
 def main():
@@ -12,8 +13,8 @@ def main():
                         help="Date for the conversion rates in the format YYYY-MM-DD")
 
     args = parser.parse_args()
-
     config = load_config()
+
     converter = CurrencyConverter(api_key=config['api_key'], date=args.date)
 
     while True:
@@ -32,16 +33,8 @@ def main():
         result = converter.convert(int(amount), base_currency, target_currency)
         print(f"{amount:.2f} {base_currency} is {result} {target_currency}")
 
-        new_date_input = input("Enter another date in format YYYY-MM-DD to continue, or 'END' to exit: ")
-        if new_date_input.upper() == 'END':
-            print("Exiting application.")
+        if not next_conversion(converter):
             break
-        try:
-            new_date = datetime.strptime(new_date_input, '%Y-%m-%d')
-            converter.date = new_date
-        except ValueError:
-            print("Invalid date format. Please enter a valid date in the format YYYY-MM-DD.")
-            continue
 
 
 if __name__ == "__main__":
