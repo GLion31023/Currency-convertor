@@ -3,13 +3,15 @@ from datetime import datetime
 
 def next_conversion(converter):
     while True:
-        new_conversion = input("Would you like to continue with another conversion? (YES/END): ").strip().upper()
+        # the user is expected to continue with yes/end
+        new_conversion = input().strip().upper()
 
         if new_conversion.upper() == 'END':
             print("Exiting application.")
             return False
         elif new_conversion == 'YES':
-            new_date = input("Would you like to change the date for the next conversion (yes/no): ").lower()
+            # The user is asked if they want to change the current date, expected to proceed with yes/no
+            new_date = input().lower()
             if new_date == 'yes':
                 if not change_date(converter):
                     return False
@@ -20,7 +22,8 @@ def next_conversion(converter):
 
 def change_date(converter):
     while True:
-        new_date_input = input("Enter a new date (YYYY-MM-DD) or 'END' to exit: ")
+        # the user is prompted to enter a new date, it has to be within 14 days due to trial API key limitations
+        new_date_input = input()
         if new_date_input.upper() == 'END':
             print("Exiting application.")
             return False
@@ -30,4 +33,4 @@ def change_date(converter):
             converter.date = new_date
             return True
         except ValueError:
-            print("Invalid date format. Please enter a valid date in the format YYYY-MM-DD.")
+            print("Please enter a valid date format.")

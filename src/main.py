@@ -8,6 +8,7 @@ from helpers import next_conversion
 
 
 def main():
+    # parse the date from the command line, only dates from the past 14 days are supported with the trial API key
     parser = argparse.ArgumentParser(description="Currency Conversion")
     parser.add_argument('date', type=lambda s: datetime.strptime(s, '%Y-%m-%d'),
                         help="Date for the conversion rates in the format YYYY-MM-DD")
@@ -22,11 +23,11 @@ def main():
         if not amount:
             break
 
-        base_currency = v.get_valid_currency("base currency")
+        base_currency = v.get_valid_currency()
         if not base_currency:
             break
 
-        target_currency = v.get_valid_currency("target currency")
+        target_currency = v.get_valid_currency()
         if not target_currency:
             break
 
