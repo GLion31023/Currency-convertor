@@ -1,4 +1,4 @@
-from config import load_supported_currencies
+from src.config import load_supported_currencies
 
 
 def get_valid_amount():

@@ -2,14 +2,14 @@ import json
 
 
 def load_config():
-    # read the API key saved in a separate config.json file as per requirement
+    """ Reads the API key from the json file. """
     with open('config.json', 'r') as file:
         config = json.load(file)
     return config
 
 
 def load_supported_currencies():
-    # load the supported currencies, the list is taken from the FASTForex website
+    """ Get the supported currencies. """
     with open('supported_currencies.json', 'r') as file:
         data = json.load(file)
     return set(data['supported_currencies'])

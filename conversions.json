@@ -1,0 +1,93 @@
+[
+    {
+        "date": "2024-06-11",
+        "amount": 50,
+        "base_currency": "BGN",
+        "target_currency": "EUR",
+        "converted_amount": 25.74
+    },
+    {
+        "date": "2024-06-11",
+        "amount": 50,
+        "base_currency": "EUR",
+        "target_currency": "BGN",
+        "converted_amount": 97.21
+    },
+    {
+        "date": "2024-06-11",
+        "amount": 100,
+        "base_currency": "EUR",
+        "target_currency": "BGN",
+        "converted_amount": 194.43
+    },
+    {
+        "date": "2024-06-11",
+        "amount": 50,
+        "base_currency": "BGN",
+        "target_currency": "EUR",
+        "converted_amount": 25.69
+    },
+    {
+        "date": "2024-06-11",
+        "amount": 50,
+        "base_currency": "EUR",
+        "target_currency": "BGN",
+        "converted_amount": 97.57
+    },
+    {
+        "date": "2024-06-11",
+        "amount": 500,
+        "base_currency": "EUR",
+        "target_currency": "BGN",
+        "converted_amount": 975.69
+    },
+    {
+        "date": "2024-06-11",
+        "amount": 500,
+        "base_currency": "USD",
+        "target_currency": "BGN",
+        "converted_amount": 909.38
+    },
+    {
+        "date": "2024-06-11",
+        "amount": 5000,
+        "base_currency": "USD",
+        "target_currency": "BGN",
+        "converted_amount": 9093.8
+    },
+    {
+        "date": "2024-06-11",
+        "amount": 500,
+        "base_currency": "USD",
+        "target_currency": "BGN",
+        "converted_amount": 899.29
+    },
+    {
+        "date": "2024-06-11",
+        "amount": 500,
+        "base_currency": "USD",
+        "target_currency": "BGN",
+        "converted_amount": 909.38
+    },
+    {
+        "date": "2024-06-05",
+        "amount": 500,
+        "base_currency": "USD",
+        "target_currency": "BGN",
+        "converted_amount": 899.29
+    },
+    {
+        "date": "2024-06-11",
+        "amount": 500,
+        "base_currency": "USD",
+        "target_currency": "BGN",
+        "converted_amount": 909.38
+    },
+    {
+        "date": "2024-06-11",
+        "amount": 500,
+        "base_currency": "CAD",
+        "target_currency": "BGN",
+        "converted_amount": 660.12
+    }
+]
