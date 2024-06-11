@@ -1,4 +1,4 @@
-# Currency Convertion CLI
+# Currency Convertor CLI
 
 ## Overview
 This Currency Converter is a command-line interface application that provides real-time and historical currency conversion using the FastForex API. It supports conversions between a wide range of currencies under the constraints of a trial API key, which allows fetching historical data up to 14 days from the current date.
