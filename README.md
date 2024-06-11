@@ -18,9 +18,11 @@ pip install -r requirements.txt
 
 ## Configuration
 - API Key: The application requires a FastForex API key. Place your API key in the config.json file as follows:
+```
 {
   "api_key": "your_api_key_here"
 }
+```
 - Supported Currencies: The application uses a supported_currencies.json file to validate input currencies, which should list all supported currency codes.
 
 
@@ -33,7 +35,10 @@ pip install -r requirements.txt
 
 ## Usage
 Run the application from the command line by navigating to the project's root directory and using the following command:
+
+```
 python CurrencyConversion.py YYYY-MM-DD
+```
 
 - YYYY-MM-DD: The date for which you want to fetch the conversion rates. This date should be within the last 14 days.
 
